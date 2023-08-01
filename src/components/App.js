@@ -18,9 +18,9 @@ import './../styles/App.css';
         <h1>Our Menu</h1>
         <div className='filterOptions'>
             <a onClick={() => filterMenu('all')}>All</a>
-            <a id='filter-btn-1' onClick={() => filterMenu('breakfast')}>breakfast</a>
-            <a id='filter-btn-2' onClick={() => filterMenu('lunch')}>Lunch</a>
-            <a id='filter-btn-3' onClick={() => filterMenu('shakes')}>Shakes</a>
+            <a id='menu-item-breakfast' onClick={() => filterMenu('breakfast')}>breakfast</a>
+            <a id='menu-item-lunch' onClick={() => filterMenu('lunch')}>Lunch</a>
+            <a id='menu-item-shakes' onClick={() => filterMenu('shakes')}>Shakes</a>
         </div>
         <div className="dishes">
         {menu.map((dish) => (
