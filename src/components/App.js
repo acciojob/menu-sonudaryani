@@ -14,13 +14,13 @@ import './../styles/App.css';
         setCategories(category);
     }
     return (
-      <div>
+      <div id='main'>
         <h1>Our Menu</h1>
         <div className='filterOptions'>
             <a onClick={() => filterMenu('all')}>All</a>
-            <a onClick={() => filterMenu('breakfast')}>breakfast</a>
-            <a onClick={() => filterMenu('lunch')}>Lunch</a>
-            <a onClick={() => filterMenu('shakes')}>Shakes</a>
+            <a id='filter-btn-1' onClick={() => filterMenu('breakfast')}>breakfast</a>
+            <a id='filter-btn-2' onClick={() => filterMenu('lunch')}>Lunch</a>
+            <a id='filter-btn-3' onClick={() => filterMenu('shakes')}>Shakes</a>
         </div>
         <div className="dishes">
         {menu.map((dish) => (
